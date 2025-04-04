@@ -4,13 +4,13 @@ import "./Recommendations.css";
 const recommendations = [
   {
     id: 1,
-    image: "/images/travel2.jpeg",  
+    image: `${process.env.PUBLIC_URL}/images/travel2.jpeg`,  
     title: "Discover",
     link: "#",
   },
   {
     id: 2,
-    image: "/images/travel1.jpeg", 
+    image: `${process.env.PUBLIC_URL}/images/travel1.jpeg`, 
     title: "Explore",
     link: "#",
   },

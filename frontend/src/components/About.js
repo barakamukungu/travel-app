@@ -7,7 +7,7 @@ function About() {
       <div className="about-container">
         {/* Diamond-shaped image */}
         <div className="about-image">
-          <img src="/images/travel3.jpeg" alt="About Us" />
+          <img src={`${process.env.PUBLIC_URL}/images/travel3.jpeg`} alt="About Us" />
         </div>
 
         {/* Text Content */}
