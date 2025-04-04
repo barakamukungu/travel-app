@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+<Router basename="/travel-app"></Router>
 import './App.css';
 import Header from './components/Header';
 import Booking from "./components/Booking";
