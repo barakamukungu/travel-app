@@ -13,10 +13,10 @@ const Booking = () => {
       { name: "Tokyo, Japan", image: `${process.env.PUBLIC_URL}/images/travel6.jpeg` },
       { name: "New York, USA", image: `${process.env.PUBLIC_URL}/images/travel11.jpeg` },
       { name: "Santorini, Greece", image: `${process.env.PUBLIC_URL}/images/travel10.jpeg` },
-      { name: "Phuket, Thailand", image: `${process.env.PUBLIC_URL}images/travel12.jpeg` },
-      { name: "Bali, Indonesia", image: `${process.env.PUBLIC_URL}images/travel9.jpeg` },
-      { name: "Giraffe Manor, Kenya", image: `${process.env.PUBLIC_URL}images/travel8.jpeg` },
-      { name: "Sydney, Australia", image: `${process.env.PUBLIC_URL}images/travel7.jpeg` },
+      { name: "Phuket, Thailand", image: `${process.env.PUBLIC_URL}/images/travel12.jpeg` },
+      { name: "Bali, Indonesia", image: `${process.env.PUBLIC_URL}/images/travel9.jpeg` },
+      { name: "Giraffe Manor, Kenya", image: `${process.env.PUBLIC_URL}/images/travel8.jpeg` },
+      { name: "Sydney, Australia", image: `${process.env.PUBLIC_URL}/images/travel7.jpeg` },
     ]);
   }, []);  
 
