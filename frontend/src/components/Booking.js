@@ -8,11 +8,17 @@ const Booking = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/destinations")
-      .then((response) => response.json())
-      .then((data) => setDestinations(data))
-      .catch((error) => console.error("Error fetching destinations:", error));
-  }, []);
+    setDestinations([
+      { name: "Paris, France", image: `${process.env.PUBLIC_URL}/images/travel5.jpeg` },
+      { name: "Tokyo, Japan", image: `${process.env.PUBLIC_URL}/images/travel6.jpeg` },
+      { name: "New York, USA", image: `${process.env.PUBLIC_URL}/images/travel11.jpeg` },
+      { name: "Santorini, Greece", image: `${process.env.PUBLIC_URL}/images/travel10.jpeg` },
+      { name: "Phuket, Thailand", image: `${process.env.PUBLIC_URL}images/travel12.jpeg` },
+      { name: "Bali, Indonesia", image: `${process.env.PUBLIC_URL}images/travel9.jpeg` },
+      { name: "Giraffe Manor, Kenya", image: `${process.env.PUBLIC_URL}images/travel8.jpeg` },
+      { name: "Sydney, Australia", image: `${process.env.PUBLIC_URL}images/travel7.jpeg` },
+    ]);
+  }, []);  
 
   const handleSelect = (destination) => {
     if (!selectedDestinations.includes(destination)) {
