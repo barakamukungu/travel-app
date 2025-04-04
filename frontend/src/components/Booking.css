@@ -1,0 +1,55 @@
+.booking-container {
+  margin: 20px;
+  padding: 60px;
+}
+
+.destination-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.book-btn {
+  background-color: #1c8a7f;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #53afa6;
+}
+
+@media (max-width: 768px) {
+  .destination-list {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}

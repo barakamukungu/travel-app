@@ -1,0 +1,65 @@
+.hero-header {
+  background: url('../../public/images/travel4.jpeg') no-repeat center/cover;
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header2, .booking-btn {
+  position: relative;
+  z-index: 2;
+}
+
+.header2 {
+  font-style: italic;
+  font-family: cursive;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.booking-btn {
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.booking-btn:hover {
+  background-color: rgba(255, 255, 255, 0.404);
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .booking-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
