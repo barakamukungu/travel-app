@@ -1,13 +1,19 @@
 import React from "react";
+import Header from "./Header";
+import About from "./About";
+import Recommendations from "./Recommendations";
+import Footer from "./Footer";
 import "./Home.css";
 
-const Home = () => {
+function Home() {
   return (
-    <div className="home">
-      <h1>Discover the Best Destinations</h1>
-      <p>Explore beautiful places around the world and book your next adventure.</p>
-    </div>
+    <>
+      <Header />
+      <About />
+      <Recommendations />
+      <Footer />
+    </>
   );
-};
+}
 
 export default Home;
